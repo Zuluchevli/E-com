@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "33c6",
+      "username": "liugb",
+      "email": "kiyg@g.c",
+      "password": "uyfy"
+    },
+    {
+      "id": "9558",
+      "username": "mohil",
+      "email": "mohil@g.c",
+      "password": "mohil"
+    }
+  ],
+  "products": [],
+  "orders": []
+}
