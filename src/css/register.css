@@ -1,3 +1,10 @@
+.mainRegister{
+    height: 95vh;
+    width: 100vw;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Page center */
 body {
   margin: 0;
@@ -13,7 +20,7 @@ body {
 .register-container {
   background: #fff;
   padding: 30px;
-  width: 350px;
+  width: 25%;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }

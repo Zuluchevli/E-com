@@ -1,21 +1,20 @@
-/* Page center */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.mainLogin{
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 /* Login box */
 .login-container {
   background: #fff;
   padding: 30px;
-  width: 320px;
+  width: 25%;
+  height: 40%;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  /* margin-top: 10%; */
+  align-self: center;
 }
 
 /* Heading */
