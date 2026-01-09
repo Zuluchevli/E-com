@@ -14,6 +14,7 @@
 // }
 import { Link } from "react-router";
 import "../css/navbar.css";
+import logo from "../assets/navbarLogo.png";
 
 export default function Navbar() {
     return (
@@ -22,7 +23,7 @@ export default function Navbar() {
 
                 {/* Logo */}
                 <div className="logo">
-                    <Link to="/">Logo Here.</Link>
+                    <Link to="./"> <img src={logo} alt="" /> </Link>
                 </div>
 
                 {/* Menu */}

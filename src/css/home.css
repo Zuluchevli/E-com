@@ -1,47 +1,74 @@
-/* GLOBAL */
-section {
-  padding: 70px 10%;
-  font-family: Arial, Helvetica, sans-serif;
+/* ---------- GLOBAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* HERO */
-.hero {
-  height: 90vh;
-  background: linear-gradient(to right, #f5f5f5, #eaeaea);
-  display: flex;
-  align-items: center;
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9fafb;
+  color: #111827;
 }
 
-.hero-content {
-  max-width: 500px;
+/* ---------- SLIDER ---------- */
+.slider {
+  width: 100vw;
+  height: 100vh;
+  
+  overflow: hidden;
 }
 
-.hero-content h1 {
-  font-size: 45px;
-  color: #000;
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: background-image 0.8s ease-in-out;
+  position: relative;
 }
 
-.hero-content h2 {
-  font-size: 50px;
-  color: #ff3f6c;
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
 }
 
-.hero-content p {
-  margin: 20px 0;
-  color: #555;
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 2;
 }
 
-.hero-content button {
-  padding: 12px 30px;
-  background: #ff3f6c;
+.slide-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.slide-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.slide-content button {
+  background: #ff7a00;
+  color: white;
   border: none;
-  color: #fff;
+  padding: 12px 22px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-/* WHY SHOP */
+/* ---------- WHY SHOP ---------- */
 .why-shop {
+  padding: 60px 8%;
+  background: #ffffff;
   text-align: center;
 }
 
@@ -53,92 +80,126 @@ section {
 .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 30px;
 }
 
 .why-card {
   padding: 30px;
-  background: #f9f9f9;
   border-radius: 10px;
+  background: #f9fafb;
+  transition: 0.3s;
 }
 
-/* ARRIVAL */
-.arrival {
-  background: #f1f1f1;
-  text-align: center;
+.why-card i {
+  font-size: 40px;
+  color: #ff7a00;
+  margin-bottom: 15px;
 }
 
-.arrival h2 {
-  font-size: 36px;
+.why-card:hover {
+  transform: translateY(-6px);
 }
 
-.arrival button {
-  margin-top: 15px;
-  padding: 10px 25px;
-  background: black;
-  color: white;
-  border: none;
+/* ---------- PRODUCTS ---------- */
+.products {
+  padding: 60px 8%;
 }
 
-/* PRODUCTS */
 .products h2 {
-  text-align: center;
-  margin-bottom: 40px;
   font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 25px;
 }
 
 .product-card {
-  background: #fff;
+  background: white;
+  border-radius: 10px;
   padding: 15px;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
 }
 
 .product-card img {
   width: 100%;
-  border-radius: 8px;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
 
 .product-card h3 {
-  margin: 10px 0;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-weight: 600;
+  margin-bottom: 12px;
 }
 
 .product-card button {
-  margin-top: 10px;
-  padding: 8px 20px;
-  background: #ff3f6c;
+  background: #ff7a00;
   color: white;
   border: none;
+  padding: 10px 16px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-/* SUBSCRIBE */
+/* ---------- SUBSCRIBE ---------- */
 .subscribe {
-  background: #000;
+  padding: 60px 8%;
+  background: #111827;
   color: white;
   text-align: center;
 }
 
+.subscribe h2 {
+  margin-bottom: 20px;
+}
+
 .subscribe-box {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .subscribe-box input {
-  padding: 10px;
-  width: 250px;
+  padding: 12px;
+  width: 260px;
   border: none;
+  outline: none;
 }
 
 .subscribe-box button {
-  padding: 10px 20px;
-  background: #ff3f6c;
-  border: none;
+  background: #ff7a00;
   color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .slide-content h1 {
+    font-size: 32px;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+  }
+
+  .subscribe-box input {
+    width: 100%;
+  }
 }
