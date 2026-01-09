@@ -12,7 +12,7 @@
 //         </nav>
 //     );
 // }
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import "../css/navbar.css";
 
 export default function Navbar() {
