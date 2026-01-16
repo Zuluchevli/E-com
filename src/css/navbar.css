@@ -24,17 +24,19 @@
 /* Logo */
 .logo a {
     /* background: white; */
-    padding: 6px 12px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
+    /* padding: 6px 12px; */
+    /* border-radius: 8px; */
+    /* display: flex; */
+    /* align-items: center; */
 }
 
 .logo a img {
-    height: 10vh;
-    width: auto;
+    height: 9vh;
+    width: 207px;
     object-fit: cover;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    padding-top: 12px;
+    padding-left: 8px;
+    /* filter: drop-shadow(0 4px 6px); */
 }
 
 /* Menu */
@@ -42,12 +44,14 @@
     list-style: none;
     display: flex;
     gap: 30px;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .nav-links li a {
     color: #e5e7eb;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     transition: color 0.3s;
 }
 
@@ -59,7 +63,7 @@
 .nav-icons {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 30px;
     color: #fff;
     font-size: 18px;
 }
