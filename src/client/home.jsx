@@ -112,30 +112,40 @@ export default function Home() {
     { img: p5, name: "Watch", price: 1599 },
     { img: p6, name: "Hand Bag", price: 1899 },
   ];
-  
+
 
   return (
     <>
       {/* SLIDER */}
-      <div className="slider">
-        <div
-          className="slide"
-          style={{ backgroundImage: `url(${slides[current]})` }}
-        >
-          <div className="slide-content">
-            <h1>Sale 20% Off</h1>
-            <p>On All Products</p>
-            <button>
-              Shop Now <i className="fa fa-arrow-right"></i>
-            </button>
-          </div>
+      {/* HERO SECTION */}
+      <section className="hero">
+        {/* LEFT TEXT */}
+        <div className="hero-left">
+          <h1>MoZuCart</h1>
+          <h2>Sale 20% Off</h2>
+          <p>
+            Discover premium fashion, accessories and lifestyle products
+            at best prices. Shop smart, shop MoZuCart.
+          </p>
+
+          <blockquote>
+            “Style is a way to say who you are without having to speak.”
+          </blockquote>
+
+          <button>
+            Shop Now <i className="fa fa-arrow-right"></i>
+          </button>
         </div>
-      </div>
 
-      {/* PRODUCTS (rest same rahega) */}
-    
-
-
+        {/* RIGHT SLIDER */}
+        <div className="hero-right">
+          <div
+            className="slide"
+            style={{ backgroundImage: `url(${slides[current]})` }}
+          ></div>
+          
+        </div>
+      </section>
 
       {/* WHY SHOP */}
       <section className="why-shop">

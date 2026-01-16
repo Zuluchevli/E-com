@@ -1,11 +1,14 @@
 .navbar {
     width: 100%;
-    background: linear-gradient(90deg, #0b1220, #121a2f);
+    background: #4b5775;
     padding: 14px 0;
-    top: 0;
     position: sticky;
+    top: 0;
     height: 10vh;
+    z-index: 9999;
 }
+
+
 
 .navbar-container {
     /* max-width: 1200px; */
@@ -19,10 +22,19 @@
 }
 
 /* Logo */
+.logo a {
+    /* background: white; */
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
 .logo a img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+    height: 10vh;
+    width: auto;
+    object-fit: cover;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 /* Menu */
